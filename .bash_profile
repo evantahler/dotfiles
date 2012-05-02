@@ -6,7 +6,7 @@ function parse_git_branch {
 
 export PS1="\e[32m[\t]\e[0m \u@\h\e[33m [\w]\e[0m \$(parse_git_branch)\n> "
 export PATH=$PATH:/usr/local/mysql/bin:/opt/local/bin
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin
 
 #general
 alias linecount="awk '{a+=\$1}END{print a}'"
