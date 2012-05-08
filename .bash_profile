@@ -23,6 +23,9 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 export EDITOR="$HOME/bin/mate -w"
 alias mate='~/bin/mate'
 
+#sublime text
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
 #node
 alias n='node'
 
