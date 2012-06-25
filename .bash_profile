@@ -42,14 +42,3 @@ eval "$(rbenv init -)"
 alias r="rbenv exec"
 alias rb="rbenv exec bundle exec"
 alias rbr="rbenv exec bundle exec rake"
-
-## TaskRabbit Joyent Config
-for file in ~/.bash_profile_includes/*.sh; do
-  [[ -r $file ]] && source $file;
-done
-
-export SDC_CLI_URL="https://us-sw-1.api.joyentcloud.com/" #Production and Staging
-# export SDC_CLI_ACCOUNT=taskrabbit #Production
-export SDC_CLI_ACCOUNT="trdev" #Staging
-export SDC_CLI_KEY_ID="evan-joyent"
-export SDC_CLI_IDENTITY="/Users/evantahler/.ssh/id_rsa"
