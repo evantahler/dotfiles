@@ -15,6 +15,7 @@ alias ds='du -k  | grep -v "\/.*\/"'
 alias dir='ls -lF'
 alias lr='ls -alrt'
 alias l='ls -alF'
+alias sssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 #mysql alias
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
