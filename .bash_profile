@@ -12,9 +12,9 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt
 alias linecount="awk '{a+=\$1}END{print a}'"
 alias diskspace="du -k | grep -v './.*\/'"
 alias ds='du -k  | grep -v "\/.*\/"'
-alias dir='ls -lF'
-alias lr='ls -alrt'
 alias l='ls -alF'
+
+#SSH helpers
 alias sssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 #mysql alias
@@ -26,9 +26,6 @@ alias mate='~/bin/mate'
 
 #sublime text
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
-
-#node
-alias n='node'
 
 #nvm
 . ~/.nvm/nvm.sh
