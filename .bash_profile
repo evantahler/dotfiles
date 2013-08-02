@@ -33,6 +33,8 @@ alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 #rails
 alias ss='script/server'
 alias sc='script/console'
+export RAILS_ENV="development"
+export RACK_ENV="development"
 
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
