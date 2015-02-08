@@ -4,35 +4,24 @@ function parse_git_branch {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+# Colors!
+alias ls='ls -G'
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 export PS1="\e[32m[\t]\e[0m \u@\h\e[33m [\w]\e[0m \$(parse_git_branch)\n> "
 export PATH=$PATH:/usr/local/mysql/bin:/opt/local/bin
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin
 
-#general
-alias linecount="awk '{a+=\$1}END{print a}'"
-alias diskspace="du -k | grep -v './.*\/'"
-alias ds='du -k  | grep -v "\/.*\/"'
-alias l='ls -alF'
-
 #SSH helpers
 alias sssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
-#mysql alias
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
-
-#textmate
-export EDITOR="$HOME/bin/mate -w"
-alias mate='~/bin/mate'
-
 #sublime text
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 #nvm
-. ~/.nvm/nvm.sh
+source $(brew --prefix nvm)/nvm.sh
 
 #rails
-alias ss='script/server'
-alias sc='script/console'
 export RAILS_ENV="development"
 export RACK_ENV="development"
 
